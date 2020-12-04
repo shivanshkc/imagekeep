@@ -1,0 +1,12 @@
+{
+  "host": {
+    "info": "Server Host",
+    "default": "NA",
+    "env": "SERVER_HOST"
+  },
+  "port": {
+    "info": "Server Port",
+    "default": "NA",
+    "env": "SERVER_PORT"
+  }
+}

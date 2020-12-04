@@ -1,0 +1,12 @@
+{
+  "name": {
+    "info": "Application Name",
+    "default": "NA",
+    "env": "APPLICATION_NAME"
+  },
+  "version": {
+    "info": "Application Version",
+    "default": "NA",
+    "env": "APPLICATION_VERSION"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "level": {
+    "info": "Log level",
+    "default": "NA",
+    "env": "LOG_LEVEL"
+  },
+  "file": {
+    "info": "Log file path",
+    "default": "NA",
+    "env": "LOG_FILE"
+  }
+}
