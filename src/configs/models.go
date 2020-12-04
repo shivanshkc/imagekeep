@@ -1,22 +1,25 @@
 package configs
 
 var conf = &Configs{
-	Logger:      &logger{},
-	Server:      &server{},
 	Application: &application{},
+	Logger:      &logger{},
+	Path:        &path{},
+	Server:      &server{},
 }
 
 var confineMap = map[string]interface{}{
 	"conf/application.json": conf.Application,
 	"conf/logger.json":      conf.Logger,
+	"conf/path.json":        conf.Path,
 	"conf/server.json":      conf.Server,
 }
 
 // Configs : Holds all the Application Configs.
 type Configs struct {
-	Logger      *logger
-	Server      *server
 	Application *application
+	Logger      *logger
+	Path        *path
+	Server      *server
 }
 
 type application struct {
@@ -27,6 +30,10 @@ type application struct {
 type logger struct {
 	Level string `json:"level"`
 	File  string `json:"file"`
+}
+
+type path struct {
+	Cover string `json:"cover"`
 }
 
 type server struct {
