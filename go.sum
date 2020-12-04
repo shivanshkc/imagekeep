@@ -7,6 +7,8 @@ github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB7
 github.com/hisitra/confine v1.0.1 h1:m3Jy0c2oBS98CCIoQurk970KJhnx3SIaX6ZvXjWQAxY=
 github.com/hisitra/confine/v2 v2.0.1 h1:pthJl3FiVYOHoTlmHyhZ2+4Sq3EiSFeWjl81rPE75wA=
 github.com/hisitra/confine/v2 v2.0.1/go.mod h1:2aPs1G9vv4hRATM5Sr5wv9LxCBHoeTboZ9a4u7j4uso=
+github.com/hisitra/valkyrie/v2 v2.0.0 h1:RLo009Ey9VC82wy2/wEsYSVQJfMhGVFTMKcPN4fLRA8=
+github.com/hisitra/valkyrie/v2 v2.0.0/go.mod h1:EYHNsGbKAYxODE8l5MlGCrgTRZNoVrlRgjDhrwN26s4=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
