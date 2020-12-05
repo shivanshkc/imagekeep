@@ -1,0 +1,7 @@
+{
+  "cover": {
+    "info": "Directory for cover images",
+    "default": "NA",
+    "env": "PATH_COVER"
+  }
+}
