@@ -32,6 +32,8 @@ func (c *coverService) GetRandomCover(args map[string]interface{}) (*http.Respon
 	}
 
 	randomFileName := info[rand.Intn(len(info))].Name()
+	log.Sugar().Infof("Returning %s random cover.", randomFileName)
+
 	randomCover, err := ioutil.ReadFile(path.Join(conf.Path.Cover, randomFileName))
 	if err != nil {
 		log.Sugar().Errorf("Unexpected error while reading cover image file: %s", err.Error())

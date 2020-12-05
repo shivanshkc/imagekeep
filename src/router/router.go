@@ -29,9 +29,6 @@ func Get() http.Handler {
 }
 
 func attachAPI(router *mux.Router) *mux.Router {
-	router.Use(middleware.ContentApplicationJSON)
-	router.Use(middleware.BodyParser)
-
 	router.HandleFunc("", func(writer http.ResponseWriter, req *http.Request) {
 		resJSON := fmt.Sprintf(
 			`{"name":"%s","version":"%s"}`,
