@@ -5,7 +5,7 @@ if [[ "$#" -ne 1 ]]; then
   exit 1
 fi
 
-IMAGE_NAME=gold
+IMAGE_NAME=imagekeep
 
 echo "############### Building Image ###############"
 if ! docker build -t $IMAGE_NAME:"$1" .; then

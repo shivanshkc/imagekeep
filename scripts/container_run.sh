@@ -1,7 +1,7 @@
 #!/bin/bash
 
-IMAGE_NAME=gold
-CONTAINER_NAME=gold
+IMAGE_NAME=imagekeep
+CONTAINER_NAME=imagekeep
 
 if [[ "$#" -ne 1 ]]; then
   echo "Usage: <script-name> <tag>"
@@ -18,7 +18,8 @@ if ! docker run \
   --restart unless-stopped \
   --env-file env/prod.env \
   --net host \
-  --volume "$HOME"/application-logs/$CONTAINER_NAME:/var/log \
+  --volume "$HOME"/docker/volumes/$CONTAINER_NAME/app-logs:/var/log \
+  --volume "$HOME"/docker/volumes/$CONTAINER_NAME/app-data/covers:/var/data/covers \
   $IMAGE_NAME:"$1"; then
   echo "Failed to run container."
   exit 1
